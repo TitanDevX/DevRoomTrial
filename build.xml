@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<project name="DevRoomTrial" default="Build">
+    <condition property="serverPath" value="C:\Users\Lenovo\Desktop\TestServer\1.18.2\">
+        <os family="windows" />
+    </condition>
+    <xmlproperty file="pom.xml" prefix="pom" keeproot="false" />
+    <target name="Build">
+        <jar jarfile="${serverPath}\plugins\${ant.project.name}.jar" basedir="./target/classes/" includes="**/*">
+            <zipgroupfileset dir="${user.home}/.m2/repository/commons-codec/commons-codec/1.14/" includes="**/*commons-codec-1.14.jar" />
+        </jar>
+    </target>
+</project>

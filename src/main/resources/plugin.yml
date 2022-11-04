@@ -1,0 +1,8 @@
+name: DevRoomTrial
+version: 1.0.0
+api-version: 1.17
+main: me.titan.devroomtrial.core.DevRoomTrialPlugin
+commands:
+  start:
+  stats:
+  leave:

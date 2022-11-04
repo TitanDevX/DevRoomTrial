@@ -1,0 +1,7 @@
+arena: "world,-81,80,-141"
+database:
+  host: localhost
+  port: 3306
+  database: devroom
+  user: root
+  password: root
